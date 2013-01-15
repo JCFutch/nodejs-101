@@ -1,0 +1,24 @@
+{
+  "name": "static-web-server",
+  "version": "0.0.1",
+  "description": "A simple static web server",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "",
+  "author": "Tom Wilson",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "request": "~2.12.0",
+    "jsdom": "~0.3.4",
+    "cssom": "~0.2.5"
+  },
+  "dependencies": {
+    "mime": "~1.2.8"
+  }
+}
