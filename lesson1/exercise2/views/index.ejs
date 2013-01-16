@@ -1,0 +1,19 @@
+<% include header.ejs %>
+<div class="container">
+<div class="hero-unit">
+  <h1><%= title %></h1>
+</div>
+
+<form action='/search' method='post'>
+  <legend>Search Form</legend>
+  <p>
+    <label>Search</label>
+    <input type="text" name="query" autofocus></input>
+  </p>
+  <p>
+    <button class="btn btn-primary">Submit</button>
+  </p>
+</form>
+</div>
+
+<% include footer.ejs %>
