@@ -1,0 +1,15 @@
+<% include header %>
+<h1>Blog</h1>
+<%- message %>
+<a href="/new">New Post</a>
+<ul>
+  <% posts.forEach(function(post) { %>
+  <li>
+    <%= post.title %>
+    <a href="/<%= post.id %>">Show</a>
+    <a href="/<%= post.id %>/edit">Edit</a>
+    
+  </li>
+  <% }); %>
+</ul>
+<% include footer %>
