@@ -1,0 +1,22 @@
+<h1>Hello World</h1>
+<ul>
+  <li ng-repeat="post in posts">
+    <span ng-bind-html-unsafe="post"></span>
+  </li>
+</ul>
+<form>
+  <p><input type="text" ng-model="post"></input></p>
+  <p><button ng-click="addMsg()">Send</button></p>
+</form>
+<div ng-bind-html-unsafe="playing"></div>
+<form>
+  <legend>Search songs</legend>
+  <p><input type="text" ng-model="query"></input></p>
+  <p><button ng-click="search()">search</button></p>
+</form>
+<ul>
+  <li ng-repeat="song in songs">
+    {{song.ArtistName}} - <b>{{song.SongName}}</b>
+    <button ng-click="select(song)">Select</button>
+  </li>
+</ul>
