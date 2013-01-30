@@ -30,7 +30,8 @@ app.use(function(req, res, next){
 // dummy database
 
 var users = {
-  tj: { name: 'tj' }
+  tom: { name: 'tom' },
+  bill: { name: 'bill' }
 };
 
 // when you create a user, generate a salt
@@ -39,8 +40,15 @@ var users = {
 hash('foobar', function(err, salt, hash){
   if (err) throw err;
   // store the salt & hash in the "db"
-  users.tj.salt = salt;
-  users.tj.hash = hash;
+  users.tom.salt = salt;
+  users.tom.hash = hash;
+});
+
+hash('foobar', function(err, salt, hash){
+  if (err) throw err;
+  // store the salt & hash in the "db"
+  users.bill.salt = salt;
+  users.bill.hash = hash;
 });
 
 // Authenticate using our plain-object database of doom!

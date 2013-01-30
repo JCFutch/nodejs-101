@@ -11,7 +11,10 @@ app.use(express.compress());
 app.use(express.static(__dirname + '/public'));
 app.use(express.bodyParser());
 app.use(express.logger('dev'));
-
+app.use(function(req, res, next) {
+  console.log('man in the middle');
+  next();
+});
 app.get('/', function(req,res){
   res.render('index', { title: 'Twitter Search App'});
 });

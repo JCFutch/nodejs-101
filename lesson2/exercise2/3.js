@@ -14,6 +14,7 @@ app.set('views', __dirname + '/views');
 
 app.use(express.bodyParser());
 app.use(express.methodOverride());
+
 app.use(function(req,res,next){
   res.locals.title = 'A Simple Blog'
   if(!res.locals.message) {
@@ -32,7 +33,12 @@ app.get('/new', function(req,res){
 });
 
 app.get('/:id', function(req,res){
-  var post = _.chain(posts).where({id: req.params.id}).first().value();
+  var post = _
+    .chain(posts)
+    .where({id: req.params.id})
+    .first()
+    .value();
+  
   res.render('show', {post: post});
 });
 

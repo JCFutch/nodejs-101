@@ -17,9 +17,9 @@ angular.module('app', ['angular-underscore'])
 
     function addPost(from, msg) {
       var msg = '<b>' + from + '</b> ' + msg;
-      $scope.posts.push(msg);
+      $scope.posts.unshift(msg);
       if ($scope.posts.length > 25) {
-        $scope.posts.shift();
+        $scope.posts.pop();
       }
     };
     

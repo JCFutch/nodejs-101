@@ -10,7 +10,8 @@ var handleRequest = function(req, res) {
       if (err) {
         console.log('404 File Not Found!');
         res.writeHead(404, {'content-type': 'text/plain'});
-        res.end('File Not Found!\n------\nMy Awesome Web Server');
+        return res.end('File Not Found!\n------\nMy Awesome Web Server');
+        
       } 
       var mimeType = mime.lookup(__dirname + '/public' + req.url);
       res.writeHead(200, {'content-type': mimeType });

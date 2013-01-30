@@ -12,7 +12,6 @@ app.use(express.favicon());
 app.use(express.bodyParser());
 app.use(express.cookieParser('shhhh, very secret'));
 app.use(express.session());
-
 // Session-persisted message middleware
 
 app.use(function(req, res, next){

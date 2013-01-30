@@ -57,5 +57,11 @@ app.put('/:id', function(req,res) {
   res.redirect('/' + req.params.id);
 });
 
+app.del('/:id', function(req,res) {
+  var postIndex = _(posts).pluck('id').indexOf(req.params.id);
+  posts.splice(postIndex, 1);
+  res.redirect('/');
+});
+
 app.listen(3000);
 console.log('express running on port 3000');
