@@ -1,0 +1,18 @@
+<div class="span7">
+  <h2>Messages</h2>
+  <div ng-repeat="post in posts">
+    <div class="well">
+      <div style="font-size: 1.3em;" ng-bind-html-unsafe="post"></div>
+    </div>
+  </div>
+</div>
+<div class="span4">
+  <form>
+    <legend>New Post</legend>
+    <p>
+      <label>Message</label>
+      <input class="span3" type="text" placeholder="message" autofocus ng-model="post"></input>
+    </p>
+    <button class="btn btn-primary" ng-click="addMsg()">Post Message</button>
+  </form>
+</div>
