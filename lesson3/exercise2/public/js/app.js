@@ -1,9 +1,9 @@
 angular.module('app', [])
-  .config(function($routeProvider) {
+  .config(['$routeProvider', function($routeProvider) {
     $routeProvider.
       when('/', { controller: 'MainCtrl', templateUrl: '/main.html'});
-  })
-  .controller('MainCtrl', function($scope, socket, $window) {
+  }])
+  .controller('MainCtrl', ['$scope', 'socket', '$window', function($scope, socket, $window) {
     $scope.posts = [];
     $scope.post = "";
 
@@ -51,8 +51,8 @@ angular.module('app', [])
       play(song);
       return false;
     }
-  })
-  .factory('socket', function ($rootScope) {
+  }])
+  .factory('socket', ['$rootScope', function ($rootScope) {
     var socket = io.connect();
     return {
       on: function (eventName, callback) {
@@ -74,5 +74,5 @@ angular.module('app', [])
         })
       }
     };
-  });
+  }]);
   

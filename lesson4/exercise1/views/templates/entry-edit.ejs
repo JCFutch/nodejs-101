@@ -1,0 +1,28 @@
+<h1>Edit Entry</h1>
+<form>
+  <p>
+    <label>OccuredAt</label>
+    <input type="datetime" ng-model="entry.occuredAt"></input>
+  </p>
+  <p>
+    <label>Description</label>
+    <input type="text" ng-model="entry.description"></input>
+  </p>
+  <p>
+    <label>Points</label>
+    <input type="number" ng-model="entry.points"></input>
+  </p>
+  <p>
+    <label>Notes</label>
+    <textarea ng-model="notes"></textarea>
+  </p>
+  <p>
+    <label>Tags</label>
+    <input type="text" ng-model="entry.tags"></input>
+  </p>
+  <p>
+    <button class="btn btn-primary" ng-click="update()">Update Entry</button>
+    <button class="btn btn-danger" ng-click="delete()">Delete Entry</button>
+    <a ng-href="#/entries/{{entry._id}}" class="btn">Cancel</a>
+  </p>
+</form>
