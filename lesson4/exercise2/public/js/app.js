@@ -29,7 +29,7 @@ angular.module('JournalApp',[])
         entry.occuredAt = util.moment(entry.occuredAt).toString();
         entry.tags = entry.tags.split(',');
         entries.create(entry, function(data) {
-          $location.path('/entries/' + data._id);
+          $location.path('/entries/' + data.id);
         });
       }
     }
@@ -41,7 +41,7 @@ angular.module('JournalApp',[])
       });
       $scope.update = function(entry) {
         entries.update($routeParams.id, entry, function() {
-          $location.path('/entries/' + $scope.entry._id);
+          $location.path('/entries/' + $scope.entry.id);
         });
       }
   }])

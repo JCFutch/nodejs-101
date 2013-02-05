@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="well offset4 span2">
+    <h1><center>{{points}}</center></h1>
+    <center>Today's Points</center>
+  </div>
+  <div class="pull-right">
+    <a href="#/entries/new" class="btn btn-primary">Add Entry</a>
+  </div>
+  <table id="entries" class="table table-bordered">
+    <tr>
+      <th>Date/Time</th>
+      <th>Description</th>
+      <th>Points</th>
+      <th>Tags</th>
+    </tr>
+    <tr ng-repeat="entry in entries">
+      <td>{{moment(entry.occuredAt).format('MMM D, YYYY, hh:mm a')}}</td>
+      <td><a ng-href="#/entries/{{entry.id}}">{{entry.description}}</td>
+      <td>{{entry.points}}</td>
+      <td>{{entry.tags}}</td>
+    </tr>
+  </table>
+</div>

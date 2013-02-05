@@ -1,0 +1,10 @@
+<ul class="nav nav-pills pull-right">
+  <li><a ng-href="#/entries/{{entry.id}}/edit"><i class='icon-pencil'></i> Edit</a></li>
+  <li class="divider"></li>
+  <li><a ng-href="#/"><i class='icon-home'></i> Home</a></li>
+</ul>
+<h1>{{moment(entry.occuredAt).format('MMM D, YYYY, hh:mm a')}}</h1>
+<p>{{entry.description}}</p>
+<p>Points: {{entry.points}}</p>
+<p>Notes: {{entry.notes}}</p>
+<p>Tags: {{entry.tags}}</p>

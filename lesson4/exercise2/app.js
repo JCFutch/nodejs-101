@@ -27,43 +27,47 @@ app.get('/templates/:page', function(req, res) {
 });
 
 app.post('/api/entries', function(req, res) {
-  var entry = new Entry(req.body);
-  entry.save(function(err) {
-    if (err) { return res.send(500, err); }
-    res.send(200, entry);
-  });
+  var entry = Entry.build(req.body)
+  entry.save().success(function(data) {
+      res.send(200, data);
+    }).error(function(err) {
+      res.send(500, err);
+    });
 });
 
 app.get('/api/entries', function(req, res) {
-  var query = Entry.find({});
-  query.exec(function(err, entries) {
-    if (err) { return res.send(500, err); }
+  Entry.findAll().success(function(entries) {
     res.send(200, entries);
-  });
+  }).error(function(err) {
+    res.send(500, err);
+  })
 });
 
 app.get('/api/entries/:id', function(req, res) {
-  var query = Entry.findById(req.params.id);
-  query.exec(function(err, data) {
-    if (err) { return res.send(500, err); }
+  Entry.find({ where: {id: req.params.id}}).success(function(data) {
     res.send(200, data);
+  }).error(function(err) {
+    res.send(500, err);
   });
 });
 
 app.put('/api/entries/:id', function(req, res) {
-  // remove keys
-  delete(req.body._v);
-  delete(req.body._id);
-  Entry.findByIdAndUpdate(req.params.id, { $set: req.body }, function(err, entry) {
-    if (err) { return res.send(500, err); }
-    res.send(200, entry);
+  Entry.find({ where: {id: req.params.id}}).success(function(entry) {
+    entry.updateAttributes(req.body).success(function() {
+      res.send(200, entry);
+    }).error(function(err) {
+      res.send(500, err);
+    });
   });
 });
 
 app.del('/api/entries/:id', function(req, res) {
-  Entry.remove({ _id: req.params.id}, function(err) {
-    if (err) { return res.send(500, err); }
-    res.send(200, 'OK');
+  Entry.find({ where: {id: req.params.id}}).success(function(entry) {
+    entry.destroy().success(function() {
+      res.send(200, 'OK');
+    }).error(function(err) {
+      res.send(500, err);
+    });
   });
 });
 
