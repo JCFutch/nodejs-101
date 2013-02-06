@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.2.0
+3 info using node@v0.8.17
+4 verbose publish [ '.' ]
+5 verbose read json /Users/instructor/tom/nodejs-101/colors-example/package.json
+6 warn package.json my-colors-project@0.0.1 No README.md file found!
+7 verbose cache add [ '.', null ]
+8 silly cache add name=undefined spec="." args=[".",null]
+9 verbose parsed url { pathname: '.', path: '.', href: '.' }
+10 silly lockFile 3a52ce78- .
+11 verbose lock . /Users/instructor/.npm/3a52ce78-.lock
+12 verbose read json package.json
+13 verbose tar pack [ '/var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/tmp.tgz',
+13 verbose tar pack   '.' ]
+14 verbose tarball /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/tmp.tgz
+15 verbose folder .
+16 info prepublish my-colors-project@0.0.1
+17 silly lockFile b9bfafe9-49226-0-8228627387434244-tmp-tgz /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/tmp.tgz
+18 verbose lock /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/tmp.tgz /Users/instructor/.npm/b9bfafe9-49226-0-8228627387434244-tmp-tgz.lock
+19 silly lockFile b9bfafe9-49226-0-8228627387434244-tmp-tgz /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/tmp.tgz
+20 verbose tar unpack /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/tmp.tgz
+21 silly lockFile 10103b3c-49226-0-8228627387434244-package /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package
+22 verbose lock /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package /Users/instructor/.npm/10103b3c-49226-0-8228627387434244-package.lock
+23 silly gunzTarPerm modes [ '755', '644' ]
+24 silly gunzTarPerm extractEntry package.json
+25 silly gunzTarPerm extractEntry index.js
+26 verbose read json /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package/package.json
+27 silly lockFile 10103b3c-49226-0-8228627387434244-package /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package
+28 verbose from cache /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package/package.json
+29 verbose tar pack [ '/Users/instructor/.npm/my-colors-project/0.0.1/package.tgz',
+29 verbose tar pack   '/var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package' ]
+30 verbose tarball /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz
+31 verbose folder /var/folders/jq/pl8250fn7wx_h05sdlkbnmz80000gn/T/npm-6892/1359577749226-0.8228627387434244/package
+32 silly lockFile 24f64e6c-colors-project-0-0-1-package-tgz /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz
+33 verbose lock /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz /Users/instructor/.npm/24f64e6c-colors-project-0-0-1-package-tgz.lock
+34 silly lockFile 24f64e6c-colors-project-0-0-1-package-tgz /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz
+35 silly lockFile 93c771b1--my-colors-project-0-0-1-package /Users/instructor/.npm/my-colors-project/0.0.1/package
+36 verbose lock /Users/instructor/.npm/my-colors-project/0.0.1/package /Users/instructor/.npm/93c771b1--my-colors-project-0-0-1-package.lock
+37 silly lockFile 93c771b1--my-colors-project-0-0-1-package /Users/instructor/.npm/my-colors-project/0.0.1/package
+38 verbose tar unpack /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz
+39 silly lockFile 93c771b1--my-colors-project-0-0-1-package /Users/instructor/.npm/my-colors-project/0.0.1/package
+40 verbose lock /Users/instructor/.npm/my-colors-project/0.0.1/package /Users/instructor/.npm/93c771b1--my-colors-project-0-0-1-package.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry index.js
+44 verbose read json /Users/instructor/.npm/my-colors-project/0.0.1/package/package.json
+45 silly lockFile 93c771b1--my-colors-project-0-0-1-package /Users/instructor/.npm/my-colors-project/0.0.1/package
+46 silly shasum updated bytes 284
+47 info shasum 107d8706ec74c39f8f9815d47bfe6d23f2b224e2
+47 info shasum /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz
+48 verbose from cache /Users/instructor/.npm/my-colors-project/0.0.1/package/package.json
+49 verbose chmod /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz 644
+50 verbose chown /Users/instructor/.npm/my-colors-project/0.0.1/package.tgz [ 501, 20 ]
+51 silly lockFile 3a52ce78- .
+52 silly publish { name: 'my-colors-project',
+52 silly publish   version: '0.0.1',
+52 silly publish   dependencies: { colors: '~0.x.x' },
+52 silly publish   _id: 'my-colors-project@0.0.1',
+52 silly publish   readme: 'ERROR: No README.md file found!',
+52 silly publish   description: 'ERROR: No README.md file found!',
+52 silly publish   dist: { shasum: '107d8706ec74c39f8f9815d47bfe6d23f2b224e2' } }
+53 error need auth auth and email required for publishing
+53 error need auth You need to authorize this machine using `npm adduser`
+54 error System Darwin 11.3.0
+55 error command "node" "/usr/local/bin/npm" "publish"
+56 error cwd /Users/instructor/tom/nodejs-101/colors-example
+57 error node -v v0.8.17
+58 error npm -v 1.2.0
+59 error code ENEEDAUTH
+60 verbose exit [ 1, true ]

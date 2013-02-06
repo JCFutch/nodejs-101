@@ -6,11 +6,16 @@ mongoose.connect(config.db);
 
 var schema = mongoose.Schema({
   occuredAt: Date,
-  description: String,
-  points: Number,
+  description: { type: String, required: true },
+  points: { type: Number, min: 1 },
   notes: String,
   tags: []
 });
+
+schema.path('points').required(true);
+schema.path('points').validate(function (value) {
+  return value > 0;
+}, 'Points must be greater than Zero');
 
 // Entry
 module.exports = mongoose.model('Entry', schema);

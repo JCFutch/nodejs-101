@@ -1,0 +1,261 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.2.0
+3 info using node@v0.8.17
+4 verbose read json /Users/instructor/tom/nodejs-101/lesson4/exercise4/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/instructor/tom/nodejs-101/lesson4/exercise4',
+6 verbose install   [ 'thug', 'thug-filters', 'ejs', 'express', 'thug-redis' ] ]
+7 verbose from cache /Users/instructor/tom/nodejs-101/lesson4/exercise4/package.json
+8 info preinstall exercise4@0.0.0
+9 verbose from cache /Users/instructor/tom/nodejs-101/lesson4/exercise4/package.json
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'thug@~0.4.3', null ]
+12 silly cache add name=undefined spec="thug@~0.4.3" args=["thug@~0.4.3",null]
+13 verbose parsed url { pathname: 'thug@~0.4.3',
+13 verbose parsed url   path: 'thug@~0.4.3',
+13 verbose parsed url   href: 'thug@~0.4.3' }
+14 silly cache add name="thug" spec="~0.4.3" args=["thug","~0.4.3"]
+15 verbose parsed url { pathname: '~0.4.3', path: '~0.4.3', href: '~0.4.3' }
+16 verbose addNamed [ 'thug', '~0.4.3' ]
+17 verbose addNamed [ null, '>=0.4.3- <0.5.0-' ]
+18 verbose cache add [ 'thug-filters@0.0.1', null ]
+19 silly cache add name=undefined spec="thug-filters@0.0.1" args=["thug-filters@0.0.1",null]
+20 verbose parsed url { pathname: 'thug-filters@0.0.1',
+20 verbose parsed url   path: 'thug-filters@0.0.1',
+20 verbose parsed url   href: 'thug-filters@0.0.1' }
+21 silly cache add name="thug-filters" spec="0.0.1" args=["thug-filters","0.0.1"]
+22 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+23 verbose addNamed [ 'thug-filters', '0.0.1' ]
+24 verbose addNamed [ '0.0.1', '0.0.1' ]
+25 silly lockFile 871cee3d-thug-0-4-3 thug@~0.4.3
+26 verbose lock thug@~0.4.3 /Users/instructor/.npm/871cee3d-thug-0-4-3.lock
+27 silly lockFile c58cb303-thug-filters-0-0-1 thug-filters@0.0.1
+28 verbose lock thug-filters@0.0.1 /Users/instructor/.npm/c58cb303-thug-filters-0-0-1.lock
+29 silly addNameRange { name: 'thug', range: '>=0.4.3- <0.5.0-', hasData: false }
+30 verbose url raw thug
+31 verbose url resolving [ 'https://registry.npmjs.org/', './thug' ]
+32 verbose url resolved https://registry.npmjs.org/thug
+33 info trying registry request attempt 1 at 14:50:42
+34 verbose etag "EI7MLKQI7NA3D9WNNLYNYCCXY"
+35 http GET https://registry.npmjs.org/thug
+36 verbose url raw thug-filters/0.0.1
+37 verbose url resolving [ 'https://registry.npmjs.org/', './thug-filters/0.0.1' ]
+38 verbose url resolved https://registry.npmjs.org/thug-filters/0.0.1
+39 info trying registry request attempt 1 at 14:50:42
+40 verbose etag "8VGPIK05MVMT6FZWV5ZB74AFG"
+41 http GET https://registry.npmjs.org/thug-filters/0.0.1
+42 verbose cache add [ 'ejs@~0.8.3', null ]
+43 silly cache add name=undefined spec="ejs@~0.8.3" args=["ejs@~0.8.3",null]
+44 verbose parsed url { pathname: 'ejs@~0.8.3',
+44 verbose parsed url   path: 'ejs@~0.8.3',
+44 verbose parsed url   href: 'ejs@~0.8.3' }
+45 silly cache add name="ejs" spec="~0.8.3" args=["ejs","~0.8.3"]
+46 verbose parsed url { pathname: '~0.8.3', path: '~0.8.3', href: '~0.8.3' }
+47 verbose addNamed [ 'ejs', '~0.8.3' ]
+48 verbose addNamed [ null, '>=0.8.3- <0.9.0-' ]
+49 silly lockFile 2fea06df-ejs-0-8-3 ejs@~0.8.3
+50 verbose lock ejs@~0.8.3 /Users/instructor/.npm/2fea06df-ejs-0-8-3.lock
+51 verbose cache add [ 'express@~3.1.0', null ]
+52 silly cache add name=undefined spec="express@~3.1.0" args=["express@~3.1.0",null]
+53 verbose parsed url { pathname: 'express@~3.1.0',
+53 verbose parsed url   path: 'express@~3.1.0',
+53 verbose parsed url   href: 'express@~3.1.0' }
+54 silly cache add name="express" spec="~3.1.0" args=["express","~3.1.0"]
+55 verbose parsed url { pathname: '~3.1.0', path: '~3.1.0', href: '~3.1.0' }
+56 verbose addNamed [ 'express', '~3.1.0' ]
+57 verbose addNamed [ null, '>=3.1.0- <3.2.0-' ]
+58 silly lockFile d9823270-express-3-1-0 express@~3.1.0
+59 verbose lock express@~3.1.0 /Users/instructor/.npm/d9823270-express-3-1-0.lock
+60 verbose cache add [ 'thug-redis@0.0.5', null ]
+61 silly cache add name=undefined spec="thug-redis@0.0.5" args=["thug-redis@0.0.5",null]
+62 verbose parsed url { pathname: 'thug-redis@0.0.5',
+62 verbose parsed url   path: 'thug-redis@0.0.5',
+62 verbose parsed url   href: 'thug-redis@0.0.5' }
+63 silly cache add name="thug-redis" spec="0.0.5" args=["thug-redis","0.0.5"]
+64 verbose parsed url { pathname: '0.0.5', path: '0.0.5', href: '0.0.5' }
+65 verbose addNamed [ 'thug-redis', '0.0.5' ]
+66 verbose addNamed [ '0.0.5', '0.0.5' ]
+67 silly lockFile bda2cd75-thug-redis-0-0-5 thug-redis@0.0.5
+68 verbose lock thug-redis@0.0.5 /Users/instructor/.npm/bda2cd75-thug-redis-0-0-5.lock
+69 silly addNameRange { name: 'ejs', range: '>=0.8.3- <0.9.0-', hasData: false }
+70 silly addNameRange { name: 'express', range: '>=3.1.0- <3.2.0-', hasData: false }
+71 verbose url raw thug-redis/0.0.5
+72 verbose url resolving [ 'https://registry.npmjs.org/', './thug-redis/0.0.5' ]
+73 verbose url resolved https://registry.npmjs.org/thug-redis/0.0.5
+74 info trying registry request attempt 1 at 14:50:42
+75 http GET https://registry.npmjs.org/thug-redis/0.0.5
+76 verbose url raw ejs
+77 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+78 verbose url resolved https://registry.npmjs.org/ejs
+79 info trying registry request attempt 1 at 14:50:42
+80 verbose etag "29XYI2GF9UHGP4KPFZYY16ZLE"
+81 http GET https://registry.npmjs.org/ejs
+82 verbose url raw express
+83 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+84 verbose url resolved https://registry.npmjs.org/express
+85 info trying registry request attempt 1 at 14:50:42
+86 verbose etag "1JBT3DVW7VF6719MYGIN4B988"
+87 http GET https://registry.npmjs.org/express
+88 http 304 https://registry.npmjs.org/thug
+89 silly registry.get cb [ 304,
+89 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+89 silly registry.get     etag: '"EI7MLKQI7NA3D9WNNLYNYCCXY"',
+89 silly registry.get     date: 'Wed, 06 Feb 2013 19:48:58 GMT',
+89 silly registry.get     'content-length': '0' } ]
+90 verbose etag thug from cache
+91 http 304 https://registry.npmjs.org/express
+92 silly registry.get cb [ 304,
+92 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+92 silly registry.get     etag: '"1JBT3DVW7VF6719MYGIN4B988"',
+92 silly registry.get     date: 'Wed, 06 Feb 2013 19:48:58 GMT',
+92 silly registry.get     'content-length': '0' } ]
+93 verbose etag express from cache
+94 silly addNameRange number 2 { name: 'thug', range: '>=0.4.3- <0.5.0-', hasData: true }
+95 silly addNameRange versions [ 'thug',
+95 silly addNameRange   [ '0.1.0',
+95 silly addNameRange     '0.2.0',
+95 silly addNameRange     '0.2.1',
+95 silly addNameRange     '0.2.2',
+95 silly addNameRange     '0.2.3',
+95 silly addNameRange     '0.2.4',
+95 silly addNameRange     '0.3.0',
+95 silly addNameRange     '0.3.1',
+95 silly addNameRange     '0.3.2',
+95 silly addNameRange     '0.3.3',
+95 silly addNameRange     '0.4.0',
+95 silly addNameRange     '0.4.1',
+95 silly addNameRange     '0.4.2',
+95 silly addNameRange     '0.4.3' ] ]
+96 verbose addNamed [ 'thug', '0.4.3' ]
+97 verbose addNamed [ '0.4.3', '0.4.3' ]
+98 silly lockFile 3534842d-thug-0-4-3 thug@0.4.3
+99 verbose lock thug@0.4.3 /Users/instructor/.npm/3534842d-thug-0-4-3.lock
+100 silly addNameRange number 2 { name: 'express', range: '>=3.1.0- <3.2.0-', hasData: true }
+101 silly addNameRange versions [ 'express',
+101 silly addNameRange   [ '0.14.0',
+101 silly addNameRange     '0.14.1',
+101 silly addNameRange     '1.0.0beta',
+101 silly addNameRange     '1.0.0beta2',
+101 silly addNameRange     '1.0.0rc',
+101 silly addNameRange     '1.0.0rc2',
+101 silly addNameRange     '1.0.0rc3',
+101 silly addNameRange     '1.0.0rc4',
+101 silly addNameRange     '1.0.0',
+101 silly addNameRange     '1.0.1',
+101 silly addNameRange     '1.0.2',
+101 silly addNameRange     '1.0.3',
+101 silly addNameRange     '1.0.4',
+101 silly addNameRange     '1.0.5',
+101 silly addNameRange     '1.0.6',
+101 silly addNameRange     '1.0.7',
+101 silly addNameRange     '2.0.0beta',
+101 silly addNameRange     '1.0.8',
+101 silly addNameRange     '2.0.0beta2',
+101 silly addNameRange     '2.0.0beta3',
+101 silly addNameRange     '2.0.0rc',
+101 silly addNameRange     '2.0.0rc2',
+101 silly addNameRange     '2.0.0rc3',
+101 silly addNameRange     '2.0.0',
+101 silly addNameRange     '2.1.0',
+101 silly addNameRange     '2.1.1',
+101 silly addNameRange     '2.2.0',
+101 silly addNameRange     '2.2.1',
+101 silly addNameRange     '2.2.2',
+101 silly addNameRange     '2.3.0',
+101 silly addNameRange     '2.3.1',
+101 silly addNameRange     '2.3.2',
+101 silly addNameRange     '2.3.3',
+101 silly addNameRange     '2.3.4',
+101 silly addNameRange     '2.3.5',
+101 silly addNameRange     '2.3.6',
+101 silly addNameRange     '2.3.7',
+101 silly addNameRange     '2.3.8',
+101 silly addNameRange     '2.3.9',
+101 silly addNameRange     '2.3.10',
+101 silly addNameRange     '2.3.11',
+101 silly addNameRange     '2.3.12',
+101 silly addNameRange     '2.4.0',
+101 silly addNameRange     '2.4.1',
+101 silly addNameRange     '2.4.2',
+101 silly addNameRange     '2.4.3',
+101 silly addNameRange     '2.4.4',
+101 silly addNameRange     '2.4.5',
+101 silly addNameRange     '2.4.6',
+101 silly addNameRange     '2.4.7',
+101 silly addNameRange     '2.5.0',
+101 silly addNameRange     '2.5.1',
+101 silly addNameRange     '2.5.2',
+101 silly addNameRange     '2.5.3',
+101 silly addNameRange     '2.5.4',
+101 silly addNameRange     '2.5.5',
+101 silly addNameRange     '2.5.6',
+101 silly addNameRange     '2.5.7',
+101 silly addNameRange     '2.5.8',
+101 silly addNameRange     '2.5.9',
+101 silly addNameRange     '3.0.0alpha1',
+101 silly addNameRange     '3.0.0alpha2',
+101 silly addNameRange     '3.0.0alpha3',
+101 silly addNameRange     '3.0.0alpha4',
+101 silly addNameRange     '3.0.0alpha5',
+101 silly addNameRange     '3.0.0beta1',
+101 silly addNameRange     '3.0.0beta2',
+101 silly addNameRange     '3.0.0beta3',
+101 silly addNameRange     '2.5.10',
+101 silly addNameRange     '3.0.0beta4',
+101 silly addNameRange     '2.5.11',
+101 silly addNameRange     '3.0.0beta6',
+101 silly addNameRange     '3.0.0beta7',
+101 silly addNameRange     '3.0.0rc1',
+101 silly addNameRange     '3.0.0rc2',
+101 silly addNameRange     '3.0.0rc3',
+101 silly addNameRange     '3.0.0rc4',
+101 silly addNameRange     '3.0.0rc5',
+101 silly addNameRange     '3.0.0',
+101 silly addNameRange     '3.0.1',
+101 silly addNameRange     '3.0.2',
+101 silly addNameRange     '3.0.3',
+101 silly addNameRange     '3.0.4',
+101 silly addNameRange     '3.0.5',
+101 silly addNameRange     '3.0.6',
+101 silly addNameRange     '3.1.0' ] ]
+102 verbose addNamed [ 'express', '3.1.0' ]
+103 verbose addNamed [ '3.1.0', '3.1.0' ]
+104 silly lockFile 0557bc2a-express-3-1-0 express@3.1.0
+105 verbose lock express@3.1.0 /Users/instructor/.npm/0557bc2a-express-3-1-0.lock
+106 verbose read json /Users/instructor/.npm/thug/0.4.3/package/package.json
+107 verbose read json /Users/instructor/.npm/express/3.1.0/package/package.json
+108 silly lockFile 3534842d-thug-0-4-3 thug@0.4.3
+109 silly lockFile 0557bc2a-express-3-1-0 express@3.1.0
+110 silly lockFile 871cee3d-thug-0-4-3 thug@~0.4.3
+111 silly lockFile d9823270-express-3-1-0 express@~3.1.0
+112 http 404 https://registry.npmjs.org/thug-redis/0.0.5
+113 silly registry.get cb [ 404,
+113 silly registry.get   { vary: 'Accept',
+113 silly registry.get     server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+113 silly registry.get     etag: '"43RI2US1V3E0W4WK66Y1FES0T"',
+113 silly registry.get     date: 'Wed, 06 Feb 2013 19:48:58 GMT',
+113 silly registry.get     'content-type': 'application/json',
+113 silly registry.get     'content-length': '36' } ]
+114 silly lockFile bda2cd75-thug-redis-0-0-5 thug-redis@0.0.5
+115 error Error: version not found: 0.0.5 : thug-redis/0.0.5
+115 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:259:14)
+115 error     at Request.init.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:120:22)
+115 error     at Request.EventEmitter.emit (events.js:99:17)
+115 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:648:16)
+115 error     at Request.EventEmitter.emit (events.js:126:20)
+115 error     at IncomingMessage.Request.start.self.req.self.httpModule.request.buffer (/usr/local/lib/node_modules/npm/node_modules/request/main.js:610:14)
+115 error     at IncomingMessage.EventEmitter.emit (events.js:126:20)
+115 error     at IncomingMessage._emitEnd (http.js:366:10)
+115 error     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+115 error     at CleartextStream.socketOnData (http.js:1430:20)
+116 error If you need help, you may report this log at:
+116 error     <http://github.com/isaacs/npm/issues>
+116 error or email it to:
+116 error     <npm-@googlegroups.com>
+117 error System Darwin 11.3.0
+118 error command "node" "/usr/local/bin/npm" "install"
+119 error cwd /Users/instructor/tom/nodejs-101/lesson4/exercise4
+120 error node -v v0.8.17
+121 error npm -v 1.2.0
+122 verbose exit [ 1, true ]

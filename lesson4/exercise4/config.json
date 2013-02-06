@@ -1,7 +1,10 @@
 {
   "db": {
-    "port": null,
-    "host": null,
-    "options": null
+    "port": 9459,
+    "host": cod.redistogo.com,
+    "options": {
+      "username": "redistogo",
+      "password": "405bbfa608a15c703e6064590d3e91e6"
+    }
   }
 }

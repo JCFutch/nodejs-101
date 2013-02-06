@@ -1,4 +1,7 @@
 {
   "db": "food_journal",
-  "username": "root"
+  "username": "username",
+  "password": "password",
+  "host": "instance38280.db.xeround.com",
+  "port": 6289
 }
