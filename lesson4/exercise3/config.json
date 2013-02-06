@@ -1,3 +1,3 @@
 {
-  "db": "http://localhost:5984/food_journal"
+  "db": "https://food-journal.iriscouch.com/food_journal"
 }
